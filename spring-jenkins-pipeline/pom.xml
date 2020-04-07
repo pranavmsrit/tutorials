@@ -5,7 +5,7 @@
     <artifactId>spring-jenkins-pipeline</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>spring-jenkins-pipeline</name>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
     <description>Intro to Jenkins 2 and the power of pipelines</description>
 
     <parent>
