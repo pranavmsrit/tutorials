@@ -72,6 +72,26 @@
                 </plugins>
             </build>
         </profile>
+         <profile>
+            <id>integration</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <configuration>
+                            <excludes>
+                                <exclude>**/*UnitTest.java</exclude>
+                            </excludes>
+                            <!-- Run only tests whose name end with "UnitTest" -->
+                            <includes>
+                                <include>**/*IntegrationTest.java</include>
+                                <include>**/*IntTest.java</include>     
+                            </includes>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>    
     </profiles>
 
     <properties>
